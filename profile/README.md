@@ -18,14 +18,16 @@
 | 项目 | 职责 |
 | --- | --- |
 | [miencraft-skin](https://github.com/Hydroline/minecraft-skin) | 可自部署的 Minecraft 皮肤 API，基于 NMSR 封装了 Adater 用于兼容 mc-heads.net 路由 |
-| [oauth-proxy](https://github.com/Hydroline/oauth-proxy) | 使用 CF Worker 作为跳板的 Google OAuth 服务中转站 |
-| Cloudflare Turnstile | 使用 CF 的 Turnstile 作为验证服务 |
+| [oauth-proxy](https://github.com/Hydroline/oauth-proxy) | 使用 Cloudflare Worker 作为跳板的 Google OAuth 服务中转站 |
+| Cloudflare Turnstile | 使用 Cloudflare 的 Turnstile 作为验证服务 |
 
 ## 客户端分发
 
 服务器的客户端更新器通过在游戏启动器内注入 JVM 启动参数，通过 `javaagent` 参数调用服务器客户端更新器以实现文件修改和各类自定义功能。
 
 Bootstrap 负责调起 Updater、控制游戏 JVM 启动时机；Updater 负责客户端文件调整。HydCraft Console 会给 Bootstrap 和 Updater 提供 Manifest。
+
+客户端下载源根据费用开支分为公共源和限制源。前者基于 Cloudflare R2 实现，后者基于腾讯云 COS 桶 + EO 回源实现。
 
 | 项目 | 职责 |
 | --- | --- |
