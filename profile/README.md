@@ -1,10 +1,10 @@
 # 👏 Coding, Creating and Exploring.
 
-这里是 Minecraft 服务器[氢气工艺](https://hydcraft.cn)的代码仓库 Hydroline，主开发者为[柠檬（AurLemon）](https://github.com/AurLemon)。
+这里是 Minecraft 服务器[氢气工艺](https://hydcraft.cn)的代码仓库 Hydroline。主开发者为[柠檬（AurLemon）](https://github.com/AurLemon)。
 
-组织内的大部分代码都是与服务器运维、运营紧密相连的项目，如服务器的基础设施网站、模组、客户端分发等项目。
+组织内的大部分代码都是与服务器运维、运营紧密相连的项目，如服务器的基础设施网站、模组、客户端分发等项目。氢气工艺是一个以建设为主的创造模式服务器，大部分项目的目的主要围绕仿真和建筑。
 
-欢迎交流，可来柠檬的 [GitHub 主页](https://github.com/AurLemon) 或是 [个人站](https://aurlemon.top)积极讨论。服务器的主要项目介绍参见下方。
+欢迎交流，可来柠檬的 [GitHub 主页](https://github.com/AurLemon)或是[个人站](https://aurlemon.top)积极讨论。氢气工艺的所有项目介绍介绍请参见下方。
 
 ## 站点
 
@@ -12,6 +12,8 @@
 | --- | --- |
 | [hydcraft-portal](https://github.com/Hydroline/hydcraft-portal) | 服务器的门户站，基于 TypeScript 生态的全栈框架 Nuxt 开发，是目前项目体量较大的一个项目。内建了服务器统一账户系统 Hydroline ID、Minecraft 服务端实时连接（[Portal Bridge](https://github.com/Hydroline/portal-bridge)，基于 WebSocket 的通信）以及 OAuth 等服务 |
 | [hydcraft-console](https://github.com/Hydroline/hydcraft-console) | 客户端更新与分发、玩家调整服务器账户，主要由管理员使用，基于 Nuxt 开发 |
+| hydcraft-map | 计划中。服务器的整合地图站点，融合 Mod 地图和 Bluemap WebApp，计划上是实现和现实的地图 App 无异的产品 |
+| hydcraft-urban | 计划中。服务器的信息汇总站，架空组织和公司申请、城市信息介绍与行政区划内容等，融合公共交通类模组（如 MTR、机械动力）的数据和游戏内外数据综合呈现信息 |
 
 ## 边缘服务
 
@@ -20,6 +22,7 @@
 | [miencraft-skin](https://github.com/Hydroline/minecraft-skin) | 可自部署的 Minecraft 皮肤 API，基于 NMSR 封装了 Adater 用于兼容 mc-heads.net 路由 |
 | [oauth-proxy](https://github.com/Hydroline/oauth-proxy) | 使用 Cloudflare Worker 作为跳板的 Google OAuth 服务中转站 |
 | Cloudflare Turnstile | 使用 Cloudflare 的 Turnstile 作为验证服务 |
+| EdgeOne 边缘函数 | 对 Assets 站的图片内容进行压缩，根据用户的设备自动转换 avif 或 webp |
 
 ## 客户端分发
 
